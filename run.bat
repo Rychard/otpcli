@@ -1,0 +1,1 @@
+dotnet run --project .\src\otpcli.csproj -r win-x64
