@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <VersionPrefix>0.1.1</VersionPrefix>
+    <VersionPrefix>0.2.0</VersionPrefix>
 
     <!-- Build specifically for Windows x64 -->
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
@@ -16,6 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
     <PackageReference Include="Otp.NET" Version="1.2.2" />
   </ItemGroup>
 
