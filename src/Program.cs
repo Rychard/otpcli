@@ -134,7 +134,7 @@ namespace otpcli
 
                     // If the user wants to ensure a fresh token is returned, we must wait for the next code.
                     Int32 remainingSeconds = totp.RemainingSeconds();
-                    token = totp.ComputeTotp(DateTime.Now.AddSeconds(remainingSeconds));
+                    token = totp.ComputeTotp(DateTime.UtcNow.AddSeconds(remainingSeconds));
 
                     if (options.Verbose)
                     {
